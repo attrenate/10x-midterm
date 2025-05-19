@@ -1,0 +1,46 @@
+@import 'variables';
+@import 'mixins';
+@import 'phones';
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    #input-nav{
+        display: flex;
+        justify-content: center;
+        gap: 10rem;
+        align-items: center;
+        margin-top: 2rem;
+        .nav-items-1{
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+            h1{
+                color: $color-blue-background;
+                font-family: $primary-font-stack;
+            }
+        }
+        .nav-items{
+            #nav-search{
+                width: 610px;
+                height: 45px;
+                border-radius: 6px;
+                padding-top: 6px;
+                padding-right: 10 10 10 40px;
+                background-color: #F5F5F5;
+                border-color: #F5F5F5;
+            }
+        }
+        #nav-items-img{
+            display: flex;
+            gap: 3rem;
+            #sails, #heart, #authorize{
+                cursor: pointer;
+            }
+
+        }
+    }
+}
