@@ -3,23 +3,23 @@
   padding: 0;
 }
 
-header #input-nav {
+body header #input-nav {
   display: flex;
   justify-content: center;
   gap: 10rem;
   align-items: center;
   margin-top: 2rem;
 }
-header #input-nav .nav-items-1 {
+body header #input-nav .nav-items-1 {
   display: flex;
   gap: 0.5rem;
   align-items: center;
 }
-header #input-nav .nav-items-1 h1 {
+body header #input-nav .nav-items-1 h1 {
   color: #0B3954;
   font-family: "font 1", "sans-serif";
 }
-header #input-nav .nav-items #nav-search {
+body header #input-nav .nav-items #nav-search {
   width: 610px;
   height: 45px;
   border-radius: 6px;
@@ -28,33 +28,33 @@ header #input-nav .nav-items #nav-search {
   background-color: #F5F5F5;
   border-color: #F5F5F5;
 }
-header #input-nav .nav-items #nav-search #search-btn {
+body header #input-nav .nav-items #nav-search #search-btn {
   cursor: pointer;
 }
-header #input-nav #nav-items-img {
+body header #input-nav #nav-items-img {
   display: flex;
   gap: 3rem;
 }
-header #input-nav #nav-items-img #sails, header #input-nav #nav-items-img #heart, header #input-nav #nav-items-img #authorize {
+body header #input-nav #nav-items-img #sails, body header #input-nav #nav-items-img #heart, body header #input-nav #nav-items-img #authorize {
   cursor: pointer;
 }
-header #catalog {
+body header #catalog {
   margin-top: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-header #catalog .catalog-child {
+body header #catalog .catalog-child {
   display: flex;
   flex-direction: column;
   align-items: center;
   cursor: pointer;
 }
-header #catalog .catalog-child .catalog-p {
+body header #catalog .catalog-child .catalog-p {
   color: #0B3954;
   font-family: "font 1", "sans-serif";
 }
-header #catalog .catalog-child #sale-btn {
+body header #catalog .catalog-child #sale-btn {
   background-color: #FFB128;
   width: 170px;
   height: 79px;
@@ -66,14 +66,97 @@ header #catalog .catalog-child #sale-btn {
   border-top-right-radius: 10px;
   transition: ease-in-out 0.3s;
 }
-header #catalog .catalog-child #sale-btn p {
+body header #catalog .catalog-child #sale-btn p {
   color: white;
 }
-header #catalog .catalog-child #sale-btn #btn-p {
+body header #catalog .catalog-child #sale-btn #btn-p {
   color: white;
   font-weight: 700;
 }
-header #catalog .catalog-child #sale-btn:hover {
+body header #catalog .catalog-child #sale-btn:hover {
   background-color: #0B3954;
   border-color: #0B3954;
+}
+body #pic-sec {
+  width: 100%;
+  height: 740px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body #pic-sec #blue-background {
+  background-color: #0B3954;
+  width: 1296px;
+  height: 670px;
+  border-radius: 32px;
+}
+body #pic-sec #furniturePicture-wrapper {
+  position: absolute;
+}
+body #pic-sec #furniturePicture-wrapper #furniture-pic {
+  border-radius: 32px;
+  width: 1178px;
+  height: 669.4799804688px;
+}
+body #pic-sec #text-wrapper {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: flex-start;
+}
+body #pic-sec #text-wrapper #h2-p {
+  left: 420px;
+  top: 120px;
+  font-family: "font 1", "sans-serif";
+  font-size: 12px;
+  font-weight: 600;
+  color: #FFFFFF;
+  margin: 0;
+}
+body #pic-sec #text-wrapper h2 {
+  left: 420px;
+  top: 150px;
+  width: 384px;
+  font-family: "font 1", "sans-serif";
+  font-size: 64px;
+  font-weight: 700;
+  color: #FFFFFF;
+  line-height: 1.1;
+  margin: 0;
+}
+body #pic-sec #text-wrapper #shop-btn {
+  width: 152px;
+  height: 64px;
+  background-color: #FFB128;
+  color: #FFFFFF;
+  border-radius: 45px;
+  cursor: pointer;
+  font-weight: 700;
+  border-color: #FFB128;
+  transition: ease-in-out 0.3s;
+}
+body #pic-sec #text-wrapper #shop-btn:hover {
+  background-color: white;
+  color: #FFB128;
+  border-color: white;
+}
+body #pic-sec #text-wrapper #collection-btn {
+  font-family: "font 1", "sans-serif";
+  width: 152px;
+  height: 64px;
+  font-weight: 700;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 45px;
+  text-transform: uppercase;
+  color: #FFB128;
+  text-align: center;
+}
+body #pic-sec #text-wrapper #collection-btn:hover {
+  background-color: #FFB128;
+  color: white;
+  transition: ease-in-out 0.3s;
 }/*# sourceMappingURL=index.css.map */
