@@ -22,19 +22,35 @@
                 console.error('Sidebar button or catalog element not found!');
             }
         });
-        const searchButton = document.getElementById('search-btn');
-            const navSearchInput = document.getElementById('nav-search');
+// Hovered boxes
+const styles = {
+  display: 'flex',
+  alignContent: 'center',
+  justifyContent: 'center',
+  color: '#0B3954',
+  fontWeight: 'bold'
+};
 
-            if (searchButton && navSearchInput) {
-                searchButton.addEventListener('click', function() {
-                    
-                    navSearchInput.classList.add('search-active');
+document.querySelectorAll('.catalog-child').forEach(item => {
+  item.addEventListener('mouseover', () => {
+    const box = document.createElement('div');
+    box.classList.add('card-box');
 
-                    
-                    navSearchInput.focus();
-                });
-            } else {
-                if (!searchButton) console.error('Search button (#search-btn) not found!');
-                if (!navSearchInput) console.error('Nav search input (#nav-search) not found!');
-            }
-        
+    const heading = document.createElement('p');
+    heading.classList.add('box-header');
+    Object.assign(heading.style, styles); // ✅ apply styles correctly
+    heading.textContent = 'WE RECOMMEND';
+
+    box.appendChild(heading);
+    item.appendChild(box);
+  });
+
+  item.addEventListener('mouseout', () => {
+    const box = item.querySelector('.card-box');
+    if (box) {
+      box.remove();
+    }
+  });
+});
+
+
