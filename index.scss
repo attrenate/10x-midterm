@@ -321,6 +321,20 @@ body{
             width: 351px !important;
             height: 365px !important;
         }
+        main{
+            #products{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                #products-wrapper{
+                   #products-wrapper{
+                    display: flex !important;
+                    flex-direction: column !important;
+                   }
+                }
+            }
+        }
     }
 }
 
