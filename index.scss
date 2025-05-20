@@ -91,6 +91,7 @@ body{
                 
                 }
             }
+            
         }
     }
     #pic-sec{
@@ -299,4 +300,17 @@ body{
         }
     }
 }
+
+// scss for the hovered container
+.card-box{
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    border-radius: 20px;
+    background-color: #b7ced687;
+    margin-top: 4rem;
+    z-index: 100;
+    color: #0B3954;
+}
+
 
