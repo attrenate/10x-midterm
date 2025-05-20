@@ -49,10 +49,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
             if (searchButton && navSearchInput) {
                 searchButton.addEventListener('click', function() {
-                    // Add the 'search-active' class to make the input visible and apply styles
+                    
                     navSearchInput.classList.add('search-active');
 
-                    // Automatically focus the search input for better UX
+                    
                     navSearchInput.focus();
                 });
             } else {
@@ -91,4 +91,17 @@ document.querySelectorAll('.catalog-child').forEach(item => {
   });
 });
 
+
+// animation for the products section
+const products = document.getElementsByClassName('lis-item-wrapper');
+
+for (let product of products) {
+  product.addEventListener('mouseover', () => {
+    product.style.transform = "translateY(-10px)";
+  });
+
+  product.addEventListener('mouseout', () => {
+    product.style.transform = "translateY(0)";
+  });
+}
 
