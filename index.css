@@ -28,10 +28,52 @@ header #input-nav .nav-items #nav-search {
   background-color: #F5F5F5;
   border-color: #F5F5F5;
 }
+header #input-nav .nav-items #nav-search #search-btn {
+  cursor: pointer;
+}
 header #input-nav #nav-items-img {
   display: flex;
   gap: 3rem;
 }
 header #input-nav #nav-items-img #sails, header #input-nav #nav-items-img #heart, header #input-nav #nav-items-img #authorize {
   cursor: pointer;
+}
+header #catalog {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header #catalog .catalog-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+header #catalog .catalog-child .catalog-p {
+  color: #0B3954;
+  font-family: "font 1", "sans-serif";
+}
+header #catalog .catalog-child #sale-btn {
+  background-color: #FFB128;
+  width: 170px;
+  height: 79px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  cursor: pointer;
+  border-color: #FFB128;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  transition: ease-in-out 0.3s;
+}
+header #catalog .catalog-child #sale-btn p {
+  color: white;
+}
+header #catalog .catalog-child #sale-btn #btn-p {
+  color: white;
+  font-weight: 700;
+}
+header #catalog .catalog-child #sale-btn:hover {
+  background-color: #0B3954;
+  border-color: #0B3954;
 }/*# sourceMappingURL=index.css.map */
