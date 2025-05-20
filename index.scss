@@ -7,84 +7,171 @@
     padding: 0;
 }
 
-header{
-    #input-nav{
-        display: flex;
-        justify-content: center;
-        gap: 10rem;
-        align-items: center;
-        margin-top: 2rem;
-        .nav-items-1{
+body{
+
+    header{
+        #input-nav{
             display: flex;
-            gap: 0.5rem;
+            justify-content: center;
+            gap: 10rem;
             align-items: center;
-            h1{
-                color: $color-blue-background;
-                font-family: $primary-font-stack;
+            margin-top: 2rem;
+            .nav-items-1{
+                display: flex;
+                gap: 0.5rem;
+                align-items: center;
+                h1{
+                    color: $color-blue-background;
+                    font-family: $primary-font-stack;
+                }
             }
-        }
-        .nav-items{
-            #nav-search{
-                width: 610px;
-                height: 45px;
-                border-radius: 6px;
-                padding-top: 6px;
-                padding-right: 10 10 10 40px;
-                background-color: #F5F5F5;
-                border-color: #F5F5F5;
-                #search-btn{
+            .nav-items{
+                #nav-search{
+                    width: 610px;
+                    height: 45px;
+                    border-radius: 6px;
+                    padding-top: 6px;
+                    padding-right: 10 10 10 40px;
+                    background-color: #F5F5F5;
+                    border-color: #F5F5F5;
+                    #search-btn{
+                        cursor: pointer;
+                    }
+                }
+            }
+            #nav-items-img{
+                display: flex;
+                gap: 3rem;
+                #sails, #heart, #authorize{
                     cursor: pointer;
                 }
+    
             }
+    
         }
-        #nav-items-img{
+        #catalog{
+            margin-top: 1rem;
             display: flex;
-            gap: 3rem;
-            #sails, #heart, #authorize{
+            justify-content: space-between;
+            align-items: center;
+            .catalog-child{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
                 cursor: pointer;
+                .catalog-p{
+                    color: $color-blue-background;
+                    font-family: $primary-font-stack;
+                }
+                #sale-btn{
+                     background-color: #FFB128;
+                    width: 170px;
+                    height: 79px;
+                    padding-top: 15px;
+                    padding-bottom: 10px;
+                    cursor: pointer;
+                    border-color: #FFB128;
+                    border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
+                    transition: ease-in-out 0.3s;
+                    p{
+                        color: white;
+                    }
+                    #btn-p{
+                        color: white;
+                        font-weight: 700;
+                    }
+                    &:hover{
+                        background-color: #0B3954;
+                        border-color: #0B3954;
+                    }
+                
+                }
             }
-
         }
-
     }
-    #catalog{
-        margin-top: 1rem;
+    #pic-sec{
+        width: 100%;
+        height: 740px;
+        background-color: black;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
-        .catalog-child{
+        #blue-background{
+            background-color: $color-blue-background;
+            width: 1296px;
+            height: 670px;
+            border-radius: 32px;
+        }
+        #furniturePicture-wrapper{
+            position: absolute;
+            #furniture-pic{
+                border-radius: 32px;
+                width: 1178px;
+                height: 669.47998046875px;
+            }
+        }
+        #text-wrapper{
+            position: absolute;
             display: flex;
             flex-direction: column;
-            align-items: center;
-            cursor: pointer;
-            .catalog-p{
-                color: $color-blue-background;
+            gap: 2rem;
+            justify-content: flex-start;
+            #h2-p{
+                left: 420px;
+                top: 120px;
                 font-family: $primary-font-stack;
+                font-size: 12px;
+                font-weight: 600;
+                color: $color-white;
+                margin: 0;
             }
-            #sale-btn{
-                 background-color: #FFB128;
-                width: 170px;
-                height: 79px;
-                padding-top: 15px;
-                padding-bottom: 10px;
+            h2{
+                left: 420px;
+                top: 150px; 
+                width: 384px; 
+                font-family: $primary-font-stack;
+                font-size: 64px;
+                font-weight: 700;
+                color: $color-white;
+                line-height: 1.1; 
+                margin: 0; 
+            }
+            #shop-btn{
+                width: 152px; 
+                height: 64px;
+                background-color: $color-primary-accent;
+                color: $color-white;
+                border-radius: 45px; 
                 cursor: pointer;
+                font-weight: 700; 
                 border-color: #FFB128;
-                border-top-left-radius: 10px;
-                border-top-right-radius: 10px;
                 transition: ease-in-out 0.3s;
-                p{
-                    color: white;
-                }
-                #btn-p{
-                    color: white;
-                    font-weight: 700;
-                }
                 &:hover{
-                    background-color: #0B3954;
-                    border-color: #0B3954;
+                background-color: white;
+                color: #FFB128;
+                border-color: white;
+            }
+            }
+            #collection-btn{
+                font-family: $primary-font-stack;
+                width: 152px; 
+                height: 64px;
+                font-weight: 700; 
+                font-size: 15px; 
+                border: none;
+                cursor: pointer;
+                border-radius: 45px;
+                text-transform: uppercase; 
+                color: #FFB128;
+                text-align: center;
+                 &:hover{
+                 background-color: #FFB128;
+                  color: white;
+                   transition: ease-in-out 0.3s;
                 }
-            
             }
         }
+
     }
 }
