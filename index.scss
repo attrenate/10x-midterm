@@ -32,6 +32,9 @@ header{
                 padding-right: 10 10 10 40px;
                 background-color: #F5F5F5;
                 border-color: #F5F5F5;
+                #search-btn{
+                    cursor: pointer;
+                }
             }
         }
         #nav-items-img{
@@ -41,6 +44,47 @@ header{
                 cursor: pointer;
             }
 
+        }
+
+    }
+    #catalog{
+        margin-top: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .catalog-child{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            cursor: pointer;
+            .catalog-p{
+                color: $color-blue-background;
+                font-family: $primary-font-stack;
+            }
+            #sale-btn{
+                 background-color: #FFB128;
+                width: 170px;
+                height: 79px;
+                padding-top: 15px;
+                padding-bottom: 10px;
+                cursor: pointer;
+                border-color: #FFB128;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                transition: ease-in-out 0.3s;
+                p{
+                    color: white;
+                }
+                #btn-p{
+                    color: white;
+                    font-weight: 700;
+                }
+                &:hover{
+                    background-color: #0B3954;
+                    border-color: #0B3954;
+                }
+            
+            }
         }
     }
 }
