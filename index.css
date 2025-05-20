@@ -344,6 +344,15 @@ body main #products #list-of-products .lis-item-wrapper .img-p {
     width: 351px !important;
     height: 365px !important;
   }
+  body main #products {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body main #products #products-wrapper #products-wrapper {
+    display: flex !important;
+    flex-direction: column !important;
+  }
 }
 #catalog.catalog-sidebar-active {
   display: flex !important;
